@@ -11,7 +11,7 @@ phases:
       - ng build
   post_build:
     commands:
-      - aws s3 sync dist/ s3://prueba-corona-s3 --delete
+      - aws s3 sync dist/ s3://prueba-corona --delete
 artifacts:
   type: zip
   base-directory: dist
